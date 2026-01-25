@@ -4,8 +4,7 @@
 
 namespace java.lang
 {
-	// TODO
-	public class PrintStream /* extends FilterOutputStream implements Appendable, Closeable */
+	public class PrintStream : FilterOutputStream, Appendable, Closeable
 	{
 		
 	}

@@ -2,11 +2,16 @@
 
 
 
+using System;
+using System.Runtime.Serialization;
+
 namespace java.lang
 {
-	public class NullPointerException : RuntimeException
+	[Serializable]
+	public class NullPointerException : Exception
 	{
 		public NullPointerException() {}
 		
-		public NullPointerException(string s) => base(s);
+		public NullPointerException(string s) : base(s){}
 	}
+}
